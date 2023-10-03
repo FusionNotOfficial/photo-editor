@@ -212,39 +212,63 @@ namespace ImageEffects
             cm = SetColorMatrixValue(.34f, -.04f, .44f, -.33f);
             ApplyFilter();
         }
+        private void SetSliders(float red, float green, float blue, float lum)
+        {
+            int r = (int)(red * 100);
+            int g = (int)(green * 100);
+            int b = (int)(blue * 100);
+            int l = (int)(lum * 100);
+
+            rText.Content = r;
+            gText.Content = g;
+            bText.Content = b;
+            lText.Content = l;
+
+            redSlider.Value = r;
+            greenSlider.Value = g;
+            blueSlider.Value = b;
+            alphaSlider.Value = l;
+        }
         private void Vesto_Click(object sender, RoutedEventArgs e)
         {
             cm = SetColorMatrixValue(.12f, -.07f, -.19f, .15f);
+            SetSliders(.12f, -.07f, -.19f, .15f);
             ApplyFilter();
         }
         private void Snusoed_Click(object sender, RoutedEventArgs e)
         {
-            cm = SetColorMatrixValue(-1.52f, 1.07f, 1.52f, -1.15f);
+            cm = SetColorMatrixValue(-.52f, .27f, .72f, -.45f);
+            SetSliders(-.52f, .27f, .72f, -.45f);
             ApplyFilter();
         }
         private void NewYork_Click(object sender, RoutedEventArgs e)
         {
             cm = SetColorMatrixValue(0, 0, .12f, -.07f);
+            SetSliders(0, 0, .12f, -.07f);
             ApplyFilter();
         }
         private void Juma_Click(object sender, RoutedEventArgs e)
         {
             cm = SetColorMatrixValue(-.37f, .18f, .19f, .11f);
+            SetSliders(-.37f, .18f, .19f, .11f);
             ApplyFilter();
         }
         private void Valencia_Click(object sender, RoutedEventArgs e)
         {
             cm = SetColorMatrixValue(.15f, .29f, 0, -.2f);
+            SetSliders(.15f, .29f, 0, -.2f);
             ApplyFilter();
         }
         private void Demption_Click(object sender, RoutedEventArgs e)
         {
-            cm = SetColorMatrixValue(1.2f, -.2f, -.2f, -1.9f);
+            cm = SetColorMatrixValue(.6f, -.2f, -.02f, -.7f);
+            SetSliders(.6f, -.2f, -.02f, -.7f);
             ApplyFilter();
         }
         private void Vesper_Click(object sender, RoutedEventArgs e)
         {
             cm = SetColorMatrixValue(.01f, .08f, -.03f, .06f);
+            SetSliders(.01f, .08f, -.03f, .06f);
             ApplyFilter();
         }
 
