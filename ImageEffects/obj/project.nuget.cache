@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "o/qXUm+Wu8te6IjOFsYtOithSj0BlwIK+QpFGl4J9mIyaG5tx6oeJITvl7bdh6rsXnd4S1riiKjIqahsJ9tpwg==",
+  "success": true,
+  "projectFilePath": "F:\\Visual Studio\\TestProjects\\ImageEffects\\ImageEffects\\ImageEffects.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Никита\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "C:\\Users\\Никита\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,87 @@
+﻿<Window x:Class="ImageEffects.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ImageEffects"
+        mc:Ignorable="d"
+        Title="FreePhotoShop" Height="594" Width="826" ResizeMode="NoResize">
+    <Grid Background="#FFCCCCCC" Height="577" VerticalAlignment="Top">
+        <Line X1="700" Y1="45" X2="790" Y2="45" Stroke="Black" StrokeThickness="1" />
+        <Line X1="700" Y1="402" X2="790" Y2="402" Stroke="Black" StrokeThickness="1" />
+        <Button Content="Valencia" HorizontalAlignment="Left" Height="31" Margin="694,56,0,0" VerticalAlignment="Top" Width="102" RenderTransformOrigin="0.441,0.485" Click="Valencia_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Juma" HorizontalAlignment="Left" Height="31" Margin="694,358,0,0" VerticalAlignment="Top" Width="102" RenderTransformOrigin="0.441,0.485" Click="Juma_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Vesper" HorizontalAlignment="Left" Height="31" Margin="694,141,0,0" VerticalAlignment="Top" Width="102" RenderTransformOrigin="0.441,0.485" Click="Vesper_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Cyber" HorizontalAlignment="Left" Height="31" Margin="694,184,0,0" VerticalAlignment="Top" Width="102" RenderTransformOrigin="0.441,0.485" Click="Cyber_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Vesto" HorizontalAlignment="Left" Height="31" Margin="694,227,0,0" VerticalAlignment="Top" Width="102" RenderTransformOrigin="0.441,0.485" Click="Vesto_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Snusoed" HorizontalAlignment="Left" Height="31" Margin="694,270,0,0" VerticalAlignment="Top" Width="102" RenderTransformOrigin="0.441,0.485" Click="Snusoed_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="New York" HorizontalAlignment="Left" Height="31" Margin="694,314,0,0" VerticalAlignment="Top" Width="102" RenderTransformOrigin="0.441,0.485" Click="NewYork_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Demption" HorizontalAlignment="Left" Height="32" Margin="694,98,0,0" VerticalAlignment="Top" Width="102" RenderTransformOrigin="0.441,0.485" Click="Demption_Click">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Rectangle x:Name="paper" HorizontalAlignment="Left" Height="393" Margin="10,10,0,0" Stroke="Black" VerticalAlignment="Top" Width="673" Fill="White"/>
+        <Image x:Name="pictureBox" HorizontalAlignment="Left" Height="391" Margin="11,11,0,0" VerticalAlignment="Top" Width="671" Stretch="None" OpacityMask="White"/>
+        <Label Content="R" HorizontalAlignment="Left" Height="32" Margin="15,410,0,0" VerticalAlignment="Top" Width="43" FontSize="20" FontWeight="Bold"/>
+        <Slider x:Name="redSlider" HorizontalAlignment="Left" Height="19" Margin="52,420,0,0" VerticalAlignment="Top" Width="631" Minimum ="-50" Maximum="50" ValueChanged="redSlider_ValueChanged"/>
+        <Label Content="G" HorizontalAlignment="Left" Height="32" Margin="15,443,0,0" VerticalAlignment="Top" Width="43" FontSize="20" FontWeight="Bold"/>
+        <Slider x:Name ="greenSlider" HorizontalAlignment="Left" Height="20" Margin="52,454,0,0" VerticalAlignment="Top" Width="631" Minimum ="-50" Maximum="50" ValueChanged="green_ValueChanged"/>
+        <Label Content="B" HorizontalAlignment="Left" Height="32" Margin="15,475,0,0" VerticalAlignment="Top" Width="43" FontSize="20" FontWeight="Bold"/>
+        <Label Content="A" HorizontalAlignment="Left" Height="32" Margin="15,508,0,0" VerticalAlignment="Top" Width="43" FontSize="20" FontWeight="Bold"/>
+        <Slider x:Name ="blueSlider" HorizontalAlignment="Left" Height="19" Margin="52,487,0,0" VerticalAlignment="Top" Width="631" Minimum ="-50" Maximum="50" ValueChanged="blue_ValueChanged"/>
+        <Slider x:Name="alphaSlider" HorizontalAlignment="Left" Height="19" Margin="52,519,0,0" VerticalAlignment="Top" Width="631" Minimum ="-100" Maximum="100" ValueChanged="alpha_ValueChanged"/>
+        <Button Content="Save" HorizontalAlignment="Left" Height="34" Margin="694,418,0,0" VerticalAlignment="Top" Width="102" Click="SaveButton_Click" FontSize="20" FontFamily="Cascadia Code"/>
+        <Button Content="Open" HorizontalAlignment="Left" Height="34" Margin="694,464,0,0" VerticalAlignment="Top" Width="102" Click="OpenButton_Click" FontSize="20" FontFamily="Cascadia Code"/>
+        <Button x:Name="reload" Content="Reload" HorizontalAlignment="Left" Height="34" Margin="694,511,0,0" VerticalAlignment="Top" Width="102" FontSize="20" FontFamily="Cascadia Code" Click="reload_Click"/>
+        <Label Content="Effects" HorizontalAlignment="Left" Height="40" Margin="700,11,0,0" VerticalAlignment="Top" Width="102" FontFamily="BIZ UDGothic" FontSize="22"/>
+        <Label x:Name ="rText" Content="0" HorizontalAlignment="Left" Margin="359,399,0,0" VerticalAlignment="Top"/>
+        <Label x:Name ="gText" Content="0" HorizontalAlignment="Left" Margin="359,433,0,0" VerticalAlignment="Top"/>
+        <Label x:Name ="bText" Content="0" HorizontalAlignment="Left" Margin="359,466,0,0" VerticalAlignment="Top"/>
+        <Label x:Name ="lText" Content="0" HorizontalAlignment="Left" Margin="359,498,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
