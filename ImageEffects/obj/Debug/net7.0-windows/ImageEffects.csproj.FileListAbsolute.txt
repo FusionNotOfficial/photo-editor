@@ -19,3 +19,5 @@ F:\Visual Studio\TestProjects\ImageEffects\ImageEffects\obj\Debug\net7.0-windows
 F:\Visual Studio\TestProjects\ImageEffects\ImageEffects\obj\Debug\net7.0-windows\ImageEffects.genruntimeconfig.cache
 F:\Visual Studio\TestProjects\ImageEffects\ImageEffects\obj\Debug\net7.0-windows\ref\ImageEffects.dll
 F:\Visual Studio\TestProjects\ImageEffects\ImageEffects\obj\Debug\net7.0-windows\ImageEffects.csproj.AssemblyReference.cache
+F:\Visual Studio\TestProjects\ImageEffects\ImageEffects\obj\Debug\net7.0-windows\Dictionary1.baml
+F:\Visual Studio\TestProjects\ImageEffects\ImageEffects\obj\Debug\net7.0-windows\App.baml
